@@ -120,10 +120,10 @@
   <div class="container">
     <div class="card">
       <h1>Privacy Policy</h1>
-      <p class="meta">Last updated: November 17, 2025</p>
+      <p class="meta">Last updated: April 5, 2026</p>
 
       <div class="highlight">
-        <strong>Short version:</strong> GeoReminder uses your device’s location to trigger reminders near places you care about. Your data is stored locally on your device and is not sent to my own servers. Some third-party services (such as map providers) may process data as part of their normal operation.
+        <strong>Short version:</strong> GeoReminder uses your device’s location to trigger reminders near places you care about. You can use the app entirely offline (where data stays on your device), or sign in with Google to securely sync your reminders to the cloud. You have full control to instantly delete your cloud data and account at any time directly from the App settings.
       </div>
 
       <p>
@@ -156,18 +156,17 @@
         <li>Location information <strong>in the background</strong>, even when the App is not open, in order to detect when you enter or leave defined geographic areas (geofences).</li>
       </ul>
       <p>
-        This location data is processed <strong>only locally on your device</strong> to trigger reminders and manage your locations. It is <strong>not sent to my own servers or stored on any backend controlled by me</strong>.
+        If you use the App offline, this location data is processed <strong>only locally on your device</strong>. If you choose to log in, your saved locations and reminder coordinates are securely synced to Google Cloud (Firestore) to enable multi-device access.
       </p>
 
-      <h3>3.2 Personal Identifiers</h3>
+      <h3>3.2 Accounts & Authentication</h3>
       <p>
-        The App does <strong>not</strong> require you to create an account or sign in. I do <strong>not</strong> collect:
+        You can use the App completely offline without creating an account. However, if you choose to sign in (via Google Sign-In) to back up and sync your data, the App will collect basic profile information provided by Google, including:
       </p>
       <ul>
-        <li>Your name</li>
-        <li>Your email address (except when you contact me directly by email)</li>
-        <li>Your phone number</li>
-        <li>Any other personally identifying account information within the App</li>
+        <li>Your email address</li>
+        <li>Your profile picture URL</li>
+        <li>A unique, anonymous user ID assigned by Firebase Authentication</li>
       </ul>
 
       <h3>3.3 Device Data</h3>
@@ -177,7 +176,7 @@
 
       <h3>3.4 Usage Data, Analytics & Crash Reports</h3>
       <p>
-        I plan to use third-party services (such as Firebase Analytics and Firebase Crashlytics) to help understand how the App is used and to improve stability and performance.
+        The App uses third-party services (Firebase Analytics and Firebase Crashlytics) to help understand how the App is used and to improve stability and performance. You have the option to opt-in or opt-out of these services during the App's onboarding, and can toggle them at any time in the Settings.
       </p>
       <p>
         When enabled, these services may collect anonymized or pseudonymized information such as:
@@ -195,28 +194,27 @@
       <h2>4. How Your Information Is Stored</h2>
       <ul>
         <li>
-          All reminder data, locations, and configuration settings are stored
-          <strong>locally on your device</strong>.
+          <strong>Offline Mode:</strong> If you do not log in, all reminder data, locations, and configuration settings are stored <strong>locally on your device</strong>.
         </li>
         <li>
-          I do <strong>not</strong> operate my own servers for storing your personal or location data.
+          <strong>Cloud Sync:</strong> If you log in with Google, your reminders and favorite locations are securely stored using Google Firebase (Firestore). 
         </li>
         <li>
-          If third-party services (like Firebase) are enabled, they may store certain usage and crash data on their own infrastructure according to their respective privacy policies.
+          I do <strong>not</strong> operate independent proprietary servers; all cloud infrastructure relies on Google's highly secure Firebase platform.
         </li>
       </ul>
 
       <h2>5. Third-Party Services</h2>
       <p>
-        GeoReminder uses or may use the following third-party services:
+        GeoReminder uses the following third-party services:
       </p>
 
       <h3>5.1 Google Maps & Android Location Services</h3>
       <p>
-        The App may use Google services to:
+        The App uses Google services to:
       </p>
       <ul>
-        <li>Display maps</li>
+        <li>Display native maps</li>
         <li>Access device location</li>
         <li>Handle geofencing and location updates</li>
       </ul>
@@ -233,20 +231,19 @@
         <li>Reverse geocoding (turning coordinates into place names/addresses)</li>
       </ul>
       <p>
-        When you search for a place or your location is converted into a readable address, some data (such as coordinates or search queries) may be sent to MapTiler’s servers. This is subject to MapTiler’s own privacy policy and terms.
+        When you search for a place or your location is converted into a readable address, data (such as coordinates or search queries) is sent to MapTiler’s servers. This is subject to MapTiler’s own privacy policy and terms.
       </p>
 
-      <h3>5.3 Firebase (Planned)</h3>
+      <h3>5.3 Firebase Platform</h3>
       <p>
-        I plan to use the following Firebase services:
+        The App uses the following Firebase services (provided by Google):
       </p>
       <ul>
-        <li><strong>Firebase Analytics</strong> – to understand general usage trends.</li>
-        <li><strong>Firebase Crashlytics</strong> – to receive crash reports and improve app stability.</li>
+        <li><strong>Firebase Authentication:</strong> To handle Google Sign-In.</li>
+        <li><strong>Cloud Firestore:</strong> To securely store and sync your reminders if you are logged in.</li>
+        <li><strong>Firebase Analytics:</strong> To understand general usage trends (if enabled).</li>
+        <li><strong>Firebase Crashlytics:</strong> To receive crash reports and improve app stability (if enabled).</li>
       </ul>
-      <p>
-        These services are provided by Google and process data according to Google’s privacy policy. If these services are introduced or their use changes significantly, I will update this Privacy Policy as appropriate.
-      </p>
 
       <p>
         The App does <strong>not</strong> currently use:
@@ -264,7 +261,7 @@
       <p>Your information may be shared only in the following ways:</p>
       <ul>
         <li>
-          <strong>Service Providers:</strong> Third-party services listed above (e.g., MapTiler, Google/Firebase) may process data as part of providing their services.
+          <strong>Service Providers:</strong> Third-party services listed above (e.g., MapTiler, Google/Firebase) process data as part of providing their services.
         </li>
         <li>
           <strong>Legal Requirements:</strong> If required by law, court order, or governmental authority, I may be obligated to disclose certain information.
@@ -276,41 +273,38 @@
         GeoReminder is intended for the general public and is <strong>not specifically designed</strong> for children under the age of 13.
       </p>
       <p>
-        The App does not require registration and does not knowingly collect personally identifiable information from children. If you are a parent or guardian and believe that your child has provided personal information, please contact me so I can take appropriate steps.
+        The App does not knowingly collect personally identifiable information from children. If you are a parent or guardian and believe that your child has provided personal information via the Cloud Sync feature, please contact me or use the in-app deletion tools to remove the data.
       </p>
 
       <h2>8. Data Retention & Deletion</h2>
       <ul>
         <li>
-          All reminder and location data used by the App is stored locally on your device and remains there until you delete it or uninstall the App.
+          <strong>Offline Data:</strong> Data stored locally on your device remains there until you manually delete it or uninstall the App. Uninstalling the App instantly wipes all local data.
         </li>
         <li>
-          <strong>Uninstalling the App</strong> removes the App and its locally stored data from your device.
+          <strong>Cloud Data:</strong> If you are logged in, you can instantly and permanently delete all your synced data and your authentication record by navigating to the App's Settings and tapping <strong>"Delete Account"</strong>.
         </li>
         <li>
-          If third-party services (such as Firebase) are used, they may retain certain anonymized usage or crash data for a limited period, according to their own policies.</li>
+          If Firebase Analytics or Crashlytics are enabled, Google may retain certain anonymized usage or crash data for a limited period according to their retention policies.
+        </li>
       </ul>
-      <p>
-        If you have questions about data deletion beyond uninstalling the App, you can contact me at
-        <a href="mailto:mark.nagy.dev+georeminder@gmail.com">mark.nagy.dev+georeminder@gmail.com</a>.
-      </p>
 
       <h2>9. Your Rights</h2>
       <p>
-        Depending on your location, you may have certain rights regarding your data, such as the right to:
+        Depending on your location (e.g., under the GDPR or CCPA), you may have certain rights regarding your data, such as the right to:
       </p>
       <ul>
         <li>Access information about what data is processed</li>
         <li>Request correction of inaccurate information</li>
-        <li>Request deletion of information where applicable</li>
+        <li>Request deletion of your information</li>
       </ul>
       <p>
-        Because GeoReminder stores your reminder data locally and does not operate its own backend, many of these rights can be exercised directly by you on your device (for example, by editing or deleting reminders or uninstalling the App). For anything else, feel free to contact me.
+        You have direct control over your data. You can delete individual reminders, clear your local data by uninstalling the app, or wipe your entire cloud presence using the <strong>"Delete Account"</strong> feature in the Settings menu. For any other privacy requests, feel free to contact me.
       </p>
 
       <h2>10. Security</h2>
       <p>
-        I take reasonable measures to protect your data within the App. However, no method of transmission or electronic storage is 100% secure. Since your reminder and location data are stored on your device, the security of your device (screen lock, OS updates, etc.) also plays an important role.
+        I take reasonable measures to protect your data within the App, and rely on Google's industry-standard security to protect synced cloud data. However, no method of transmission or electronic storage is 100% secure. The security of your device (screen lock, OS updates, etc.) also plays a critical role in protecting your data.
       </p>
 
       <h2>11. Changes to This Privacy Policy</h2>
